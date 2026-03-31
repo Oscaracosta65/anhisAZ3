@@ -19,7 +19,7 @@
  * GAME CONFIG IN THIS FILE:
  * - game_id = AZ3
  * - non-daily game
- * - main balls = 5
+ * - main balls = 5 (positions: first, second, third, fourth, fifth)
  * - main number range = 01..44
  * - bonus range = 01..44 (Bonus Ball)
  */
@@ -1803,7 +1803,7 @@ table.skai-table tbody tr:hover{
             </div>
             <div class="skai-card-body">
               <div class="skai-chart-frame">
-                <canvas id="starChart" aria-label="Star Ball distribution chart" role="img"></canvas>
+                <canvas id="starChart" aria-label="Bonus Ball distribution chart" role="img"></canvas>
               </div>
             </div>
           </div>
@@ -2421,4 +2421,4 @@ table.skai-table tbody tr:hover{
   }
 })();
 </script>
-<?php echo HTMLHelper::_('content.prepare', '{loadposition Pick5Wheels}'); ?>
+<?php echo HTMLHelper::_('content.prepare', '{loadposition Pick6Wheels}'); ?>
